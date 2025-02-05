@@ -1,4 +1,4 @@
-import { setId } from '../../helpers/setId';
+import { setId } from '../../../helpers/setId';
 import classes from './Input.module.css';
 import PropTypes from 'prop-types';
 

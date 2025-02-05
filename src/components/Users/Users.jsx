@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import classes from './Users.module.css';
-import { Input } from '../../ui/Input/Input';
+import { Input } from '../UI/Input/Input';
 import { UsersList } from '../UsersList/UsersList';
 import { Counter } from '../Counter/Counter';
 import { useState } from 'react';
