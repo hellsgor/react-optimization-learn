@@ -2,7 +2,7 @@ import './App.css';
 
 import { useState } from 'react';
 import { setId } from './helpers/setId';
-import { UsersList } from './components/UsersList/UsersList';
+import { Users } from './components/Users/Users';
 import { defaultUsers } from './data/users';
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       {users.length ? (
-        <UsersList users={users} />
+        <Users users={users} />
       ) : (
         <p>Пользователи не найдены :(</p>
       )}
