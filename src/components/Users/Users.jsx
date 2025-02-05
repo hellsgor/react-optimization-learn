@@ -1,20 +1,35 @@
 import PropTypes from 'prop-types';
 
 import classes from './Users.module.css';
+import { Input } from '../../ui/Input/Input';
 import { UsersList } from '../UsersList/UsersList';
 import { Counter } from '../Counter/Counter';
+import { useState } from 'react';
+import { useUsers } from '../../hooks/useUsers';
 
 export const Users = ({ users = [] }) => {
+  const [controls, setControls] = useState({ search: '', sort: '' });
+
+  const handledUsers = useUsers(users, controls);
+
   return (
     <section className={classes.users}>
       <h2>Список пользователей:</h2>
 
-      {/* <div className={classes.filter}>
-        <input type="text" value={controls.filter} />
-        <input type="text" value={controls.sort} />
-      </div> */}
+      <div className={classes.controls}>
+        <div className={classes.controlsWrapper}>
+          <Input
+            label={'Search:'}
+            value={controls.search}
+            onChange={(e) =>
+              setControls({ ...controls, search: e.target.value })
+            }
+          />
+        </div>
+        <hr />
+      </div>
 
-      <UsersList users={users} />
+      <UsersList users={handledUsers} />
 
       <Counter value={users.length} text={'Всего пользователей:'} />
     </section>
