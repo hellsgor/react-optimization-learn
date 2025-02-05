@@ -1,0 +1,22 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.counter p,
+.counter hr {
+  flex: 0 0 100%;
+}
+
+.counter hr {
+  margin: 0;
+}
+
+.counter p {
+  text-align: right;
+}
+
+.text::after {
+  content: ' ';
+}
