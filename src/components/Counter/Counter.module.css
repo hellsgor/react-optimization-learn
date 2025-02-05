@@ -4,13 +4,8 @@
   row-gap: 1rem;
 }
 
-.counter p,
-.counter hr {
+.counter p {
   flex: 0 0 100%;
-}
-
-.counter hr {
-  margin: 0;
 }
 
 .counter p {
