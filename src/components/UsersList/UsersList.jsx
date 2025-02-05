@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import classes from './UsersList.module.css';
 import { UserItem } from '../UserItem/UserItem';
+import { Counter } from '../Counter/Counter';
 
 export const UsersList = ({ users = [] }) => {
   return (
@@ -14,6 +15,8 @@ export const UsersList = ({ users = [] }) => {
           </li>
         ))}
       </ul>
+
+      <Counter value={users.length} text={'Всего пользователей:'} />
     </section>
   );
 };
