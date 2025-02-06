@@ -3,23 +3,29 @@
   gap: 8px;
   align-items: center;
   width: 100%;
-}
-
-.control label {
   color: gray;
+  cursor: pointer;
 }
 
 .control select,
 .control input {
   font-size: 1rem;
   line-height: 1;
-  padding: 8px 4px;
+  
   width: 100%;
   outline: none;
   background-color: #3b3b3b;
   border: none;
   border-radius: 4px;
-  height: 
+}
+
+.control input {
+  padding: 8px 4px;
+}
+
+.control select {
+  cursor: pointer;
+  padding: 9px 4px;
 }
 
 .control select:focus,
