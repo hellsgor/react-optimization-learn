@@ -1,0 +1,28 @@
+.control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.control label {
+  color: gray;
+}
+
+.control select,
+.control input {
+  font-size: 1rem;
+  line-height: 1;
+  padding: 8px 4px;
+  width: 100%;
+  outline: none;
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 4px;
+  height: 
+}
+
+.control select:focus,
+.control input:focus {
+  box-shadow: 0px 0px 4px 1px rgba(153,205,50,0.99);
+}

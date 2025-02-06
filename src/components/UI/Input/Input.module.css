@@ -1,17 +1,5 @@
 .input {
-  display: flex;
-  gap: 8px;
-  align-items: center;
   position: relative;
-}
-
-.input label {
-  color: gray;
-}
-
-.input input {
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
 .input p {
