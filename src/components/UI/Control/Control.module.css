@@ -14,9 +14,10 @@
   
   width: 100%;
   outline: none;
-  background-color: #3b3b3b;
-  border: none;
+  background-color: #1a1a1a;
+  border: 1px solid transparent;
   border-radius: 4px;
+  transition: border-color 0.25s ease-in-out;
 }
 
 .control input {
@@ -26,6 +27,13 @@
 .control select {
   cursor: pointer;
   padding: 9px 4px;
+}
+
+@media(hover:hover) {
+  .control select:hover,
+  .control input:hover {
+    border-color: yellowgreen;
+  }
 }
 
 .control select:focus,
